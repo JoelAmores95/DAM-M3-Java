@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class Ejercicio02 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+//		// El abuelo tiene una parcela de M x N. Le preguntamos las medidas
+//		System.out.println("Abuelo, las medidas del huerto. Metros de base:");
+//		
+//		int baseHuerto = teclado.nextInt();
+//		System.out.println("Lo tengo, ara dime la 'altura'");
+//		int alturaHuerto = teclado.nextInt();
+//		
+////		Les hortalisses que creixen en aquesta comarca són:
+////		T → Tomàquets
+////		E → Enciams
+////		B → Bledes
+////		R → Raves
+		
+		String[][] huerto = { 	{" T "," T "," R "," T "},
+								{" - "," - "," - "," - "},
+								{" - "," - "," T "," - "},
+								{" R "," E "," E "," - "},
+								{" R "," E "," - "," E "}
+							};
+		
+		System.out.println("La fila más cercana al río donde plantar es: ");
+		if( numFilaOnPodenPlantarBledesMatriu(huerto)==-1) {
+			System.out.println("No se puede plantar en ninguna fila");
+		} else {
+			System.out.println(numFilaOnPodenPlantarBledesMatriu(huerto));
+		}
+	}
+	
+	// Función 1 esPodenPlantarBledesFila()
+	
+	/**
+	 * esPodenPlantarBledesFila();
+	 * Donada la matriu i un número de fila, retorna si es pot plantar tota la filera de bledes o no.
+	 * @return boolean
+	 */
+	public static boolean esPodenPlantarBledesFila(char matriz[][], int numFila){
+		
+		// Tengo que recorrer la fila introducida, así que voy cambiando de columna
+		for (int col = 0; col < matriz[numFila].length; col++) {
+			
+			// Si aparece algo que no esté vacío o sea Tomates (T), no se puede plantar
+			if(matriz[numFila][col] != '-' && matriz[numFila][col] != 'T') {
+				return false;
+			} 
+			
+			// Si todo está vacío o tiene Tomates, se puede plantar
+		} return true;
+	}
+	
+	// Función 2 numFilaOnPodenPlantarBledesMatriu()
+	
+	/**
+	 * numFilaOnPodenPlantarBledesMatriu();
+	 * Donada la matriu, retorna el número de fila (més propera al riu) on es poden plantar bledes. 
+	 * Si no es poden plantar bledes en cap fila, retorna un -1.  
+	 * @return int
+	 */
+
+	public static int numFilaOnPodenPlantarBledesMatriu(String matriz[][]) {
+		
+		// Busca desde el final de la matriz hacia el principio
+		for (int fil = matriz.length-1; fil < 0; fil--) {
+			if(esPodenPlantarBledesFila(matriz, fil)) {
+				return fil;
+			}
+		}return -1;
+	}
+}

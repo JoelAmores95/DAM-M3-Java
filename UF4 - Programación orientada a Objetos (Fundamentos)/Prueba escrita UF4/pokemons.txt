@@ -1,0 +1,16 @@
+15
+Pikachu Electric 27,2 55 40 35
+Bulbasaur Planta 31,3 49 49 45
+Charmander Foc 38,5 52 43 39
+Squirtle Aigua 40,8 48 65 44
+Caterpie Insecte 13,1 30 35 45
+Pidgey Normal 8,1 45 40 40
+Rattata Normal 15,8 56 35 30
+Ekans Veri 31,3 60 44 35
+Sandshrew Terra 54,4 75 85 50
+Roggenrola Roca 81,6 75 85 55
+Digglet Terra 3,6 55 25 10
+Gastly Fantasma 0,4 35 30 30
+Chansey Normal 156,9 5 5 250
+Pichu Electric 9,0 40 15 20
+Solosis Psiquic 4,5 30 40 45

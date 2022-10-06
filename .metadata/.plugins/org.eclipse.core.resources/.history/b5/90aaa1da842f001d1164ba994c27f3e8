@@ -1,0 +1,26 @@
+
+public class Ejercicio01 {
+
+	// Ejercicio 1 - Suma de una array usando 2 clases
+	// Para simplificar el proceso, creo las dos clases en el mismo archivo.
+	
+	public static void main (String[] args) {
+		int[] arrayNumbers = {0, 1, 2, 3};
+		int sum = SumarArray.sumarArray(arrayNumbers);
+
+		System.out.println("Sum of all numbers = " + sum);
+	} 
+}
+
+// Clase secundaria que tiene el método que suma
+
+class SumarArray{
+	
+	public static int sumarArray(int[]arrayPasada) {
+		int suma = 0;
+		for (int i = 0; i < arrayPasada.length; i++) {
+			suma += arrayPasada[i];
+		}
+		return suma;
+	}
+}

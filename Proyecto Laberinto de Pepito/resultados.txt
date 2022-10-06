@@ -1,0 +1,151 @@
+Dificultad: Personalizado
+Número de pasos: 6
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 9
+¡Has ganado!
+
+Dificultad: Medio
+Número de pasos: 8
+¡Has ganado!
+
+Dificultad: Difícil
+Número de pasos: 0
+No has acabado la partida
+
+Dificultad: Difícil
+Número de pasos: 8
+No has acabado la partida
+
+Dificultad: Difícil
+Número de pasos: 25
+¡Has ganado!
+
+Dificultad: Difícil
+Número de pasos: 40
+¡Has ganado!
+
+Dificultad: Difícil
+Número de pasos: 40
+¡Has ganado!
+
+Dificultad: Difícil
+Número de pasos: 25
+¡Has ganado!
+
+Dificultad: Personalizado
+Número de pasos: 4
+¡Has ganado!
+
+Dificultad: Personalizado
+Número de pasos: 8
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 8
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 9
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 21
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 4
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 6
+No has acabado la partida
+
+Dificultad: Fácil
+Número de pasos: 8
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 4
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 4
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 2
+No has acabado la partida
+
+Dificultad: Fácil
+Número de pasos: 4
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 4
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 8
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 6
+Puntuación: 100¡Has ganado!
+
+Dificultad: Medio
+Número de pasos: 16
+Puntuación: 800
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 4
+Puntuación: 300
+¡Has ganado!
+
+Dificultad: Medio
+Número de pasos: 8
+Puntuación: 200
+¡Has ganado!
+
+Dificultad: Medio
+Número de pasos: 15
+Puntuación: 650
+¡Has ganado!
+
+Dificultad: Difícil
+Número de pasos: 31
+Puntuación: 1300
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 10
+Puntuación: 200
+¡Has ganado!
+
+Dificultad: Difícil
+Número de pasos: 76
+Puntuación: 1600
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 11
+Puntuación: 200
+¡Has ganado!
+
+Dificultad: Fácil
+Número de pasos: 0
+Puntuación: 0
+No has acabado la partida
+
+Dificultad: Difícil
+Número de pasos: 66
+Puntuación: 1700
+¡Has ganado!
+
+Dificultad: Personalizado
+Número de pasos: 6
+Puntuación: 0
+¡Has ganado!
+

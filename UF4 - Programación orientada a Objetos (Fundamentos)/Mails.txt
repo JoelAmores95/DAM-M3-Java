@@ -1,0 +1,9 @@
+Hola, sóc un text on hi ha adreces de correu, com per exemple pepito@gmail.com o info@insbaixcamp.cat 
+i d'altres que no ho són com pepito@gmail o insbaixcamp@.cat
+
+L'objectiu de l'activitat és trobar les adreces correctes i guardar-les en un nou fitxer. 
+
+abc@abc.com   aaa@aaa   
+
+bbb@c.    
+a@b.com

@@ -1,0 +1,72 @@
+{ 	{' ', ' ', 'W', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'W', ' '},
+										{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', 'W', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', ' ', 'W', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', 'W', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+										{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}	};
+
+
+// En linea
+
+		// Está dentro de la matriz hacia izquierda y derecha
+		if (columna - 3 >= 0 && columna + 3 < matriz[0].length - 1) {
+
+			// Miro si hay alguna W dentro de rango
+
+			if (matriz[fila][columna - 3] == 'W' || matriz[fila][columna + 3] == 'W') {
+
+				// Hay un wc
+				return true;
+			}
+		}
+
+		// En columna
+
+		// Está dentro de la matriz tanto arriba como abajo
+		if (fila - 3 >= 0 && fila + 3 < matriz.length - 1) {
+
+			// Miro si hay alguna W dentro de rango
+			if (matriz[fila - 3][columna] == 'W' || matriz[fila + 3][columna] == 'W') {
+				return true;
+			}
+		}
+
+		// En diagonal
+
+		// Miro si hacia arriba a la izquierda está dentro de la matriz
+
+		if (fila - 3 >= 0 && columna - 3 >= 0) {
+			if (matriz[fila - 3][columna - 3] == 'W') {
+				return true;
+			}
+		} 
+
+		// Miro si hacia arriba a la derecha está dentro de la matriz
+		if (fila - 3 >= 0 && columna + 3 <= (matriz[0].length - 1) ) {
+			if (matriz[fila - 3][columna + 3] == 'W') {
+				return true;
+			}
+		}
+
+		// Miro si hacia abajo a la izquierda está dentro de la matriz
+		if (fila + 3 < matriz.length - 1 && columna - 3 >= 0) {
+
+			if (matriz[fila + 3][columna - 3] == 'W') {
+				return true;
+			}
+		}
+
+		// Miro si hacia abajo a la derecha está dentro de la matriz
+		if (fila + 3 < matriz.length - 1 && columna + 3 < matriz[0].length - 1) {
+			if (matriz[fila + 3][columna + 3] == 'W') {
+				return true;
+			}
+		}
+
+		// Si llega hasta aquí es que no hay WC
+		return false;
+	}

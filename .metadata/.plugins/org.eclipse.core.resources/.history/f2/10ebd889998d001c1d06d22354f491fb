@@ -1,0 +1,120 @@
+import java.util.Scanner;
+
+public class Ejercicio03 {
+
+	public static void main(String[] args) {
+		int[][] tabla = {	{1,2,5,4,5},
+							{2,4,8,6,4},
+							{2,5,6,5,4},
+							{2,5,4,5,2},
+							{1,4,0,5,8}		};
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Elige la opción: \n"
+				+ "i: Ver la suma de vecinos por celda.\n"
+				+ "ii: Ver la suma de los vecinos de toda la matriz\n"
+				+ "iii: Salir");
+		String opcion = teclado.nextLine();
+		switch(opcion) {
+
+		// Opción 1
+		case "i": System.out.println("Valor fila: ");
+		int fil = teclado.nextInt();
+		System.out.println("Valor columna: ");
+		int col= teclado.nextInt();
+		System.out.println(sumarVecinos(tabla, fil, col)); 
+		break;
+
+		// Opción 2
+		case "ii": System.out.println(sumarVecinosTodasCeldas(tabla));
+		break;
+
+		// Opción 3
+		default: System.out.println("Has salido del programa.");
+		break;
+		}
+
+	}
+
+	// Función 1: sumarVecinos
+
+	/**
+	 * Dada una celda (numFila y numCol), calcula la suma de sus adyacentes
+	 * @param matriz
+	 * @param numFil
+	 * @param numCol
+	 * @return int
+	 */
+
+	public static int sumarVecinos(int matriz[][], int numFil, int numCol) {
+		int suma = 0;
+
+		// Lo divido en 8 posibilidades, siempre que esté dentro de límites
+
+		// Opción 1 fil + 1
+		if(numFil + 1 < matriz.length) {
+			suma += matriz[numFil + 1][numCol];
+		}
+
+		// Opción 2 fil - 1
+		if(numFil - 1 >= 0) {
+			suma += matriz[numFil - 1][numCol];
+		}
+
+		// Opción 3 col - 1
+		if(numCol - 1 >= 0) {
+			suma += matriz[numFil][numCol - 1];
+		}
+
+		//Opción 4 col + 1
+		if(numCol + 1 < matriz[numFil].length) {
+			suma += matriz[numFil][numCol + 1];
+		}
+
+		// Opción 5 col + 1 fil -1
+		if( numCol + 1 < matriz[numFil].length && numFil - 1 >= 0) {
+			suma += matriz[numFil - 1][numCol + 1];
+		}
+
+		// Opción 6 col - 1 fil -1
+		if(numCol - 1 >= 0 && numFil - 1 >= 0) {
+			suma += matriz[numFil - 1][numCol - 1];
+		}
+
+		// Opción 7 col + 1 fil +1
+		if(numCol + 1 < matriz[numFil].length && numFil + 1 < matriz.length) {
+			suma += matriz[numFil + 1][numCol + 1];
+		}
+
+		// Opción 8 col -1 fil +1
+		if(numCol - 1 >= 0 && numFil + 1 < matriz.length ) {
+			suma += matriz[numFil + 1][numCol - 1];
+		}
+
+		return suma;
+	}
+
+	// Función 2: Sumar vecinos de todas las celdas
+
+	/**
+	 * Devuelve la suma de los vecinos de todas las celdas
+	 * @param matriz
+	 * @return
+	 */
+	public static int sumarVecinosTodasCeldas(int matriz[][]) {
+
+		// Guardo la suma en la variable
+		int suma = 0;
+
+		// Recorro la matriz y muestro la suma de cada celda
+		for (int fil = 0; fil < matriz.length; fil++) {
+			for (int col = 0; col < matriz.length; col++) {
+				System.out.println("Posición: [" +fil+"]["+col+"]" + matriz[fil][col]);
+				System.out.println("Valor suma vecinos: " + sumarVecinos(matriz, fil, col));
+				suma += sumarVecinos(matriz, fil, col);
+			}
+		}
+		return suma;
+	}
+
+}

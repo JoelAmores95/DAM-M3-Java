@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;PruebaExtra&apos; to &apos;AA2_Matrices&apos;&#x0D;&#x0A;- Original project: &apos;F01_Matrices_Ejercicios&apos;&#x0D;&#x0A;- Original element: &apos;PruebaExtra&apos;&#x0D;&#x0A;- Renamed element: &apos;AA2_Matrices&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PruebaExtra&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{PruebaExtra.java[PruebaExtra" matchStrategy="1" name="AA2_Matrices" qualified="false" references="true" similarDeclarations="true" stamp="1639567564484" textual="false" version="1.0"/>
+</session>
